@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Prezzo biglietto</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- container -->
+        <div class="container">
+            <div class="container_block">
+                <div>
+                    <h4>Nome e Cognome</h4>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <h4>Km da percorrere</h4>
+                    <input id="chilometri" type="text">
+                </div>
+                <div>
+                    <h4>Fascia d'età</h4>
+                    <select name="eta" id="eta">
+                        <option value="minorenne">minorenne</option>
+                        <option value="maggiorenne">maggiorenne</option>
+                        <option value="over_65">over 65</option>
+                    </select>
+                </div>    
+            </div>
+            <button id="create">Genera</button>
+        </div>
+
+        <!-- container -->
+        <div class="container">
+            <h2 id="prezzo_base"></h2>
+            <h2 id="prezzo_scontato"></h2>
+        </div>
+    </main>
+    
+
+
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

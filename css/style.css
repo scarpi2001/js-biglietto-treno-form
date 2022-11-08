@@ -1,0 +1,36 @@
+/* GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: crimson;
+}
+
+/* HEADER */
+header {
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* MAIN */
+
+/* container */
+.container {
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 30px auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container_block {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
