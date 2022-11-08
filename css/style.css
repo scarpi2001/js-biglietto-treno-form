@@ -7,25 +7,25 @@
 
 body {
     background-color: crimson;
+    text-align: center;
+}
+
+body h1, h2 {
+    color: #fff;
 }
 
 /* HEADER */
 header {
     padding: 20px 0;
-    color: #fff;
-    text-align: center;
 }
 
 /* MAIN */
 
 /* container */
 .container {
-    background-color: #fff;
     max-width: 1200px;
-    margin: 30px auto;
-    border-radius: 15px;
-    text-align: center;
-    padding: 20px 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .container_block {
@@ -33,4 +33,10 @@ header {
     justify-content: center;
     justify-content: space-evenly;
     margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.form {
+    border-radius: 15px;
 }

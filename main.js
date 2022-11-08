@@ -13,11 +13,9 @@ myButton.addEventListener("click",
         let nome = inputFieldName.value;
         let chilometri = parseInt(inputFieldKm.value);
         let eta = inputFieldAge.value;
-
         let prezzo = chilometri * 0.21;
-        document.getElementById("prezzo_base").innerHTML = `Prezzo base ${prezzo.toFixed(2)}`
-
-        console.log(nome, chilometri, eta, prezzo);
+        
+        console.log(nome, chilometri, eta);
         
         //sconti
         let sconto;
@@ -26,15 +24,18 @@ myButton.addEventListener("click",
             sconto = prezzo * 0.20;
             prezzo -= sconto;
             console.log("sconto minore", sconto);
-            document.getElementById("prezzo_scontato").innerHTML = `Prezzo scontato €${prezzo.toFixed(2)} / Sconto minorenne €${sconto.toFixed(2)} `;
+            document.getElementById("price").innerHTML = `Prezzo scontato €${prezzo.toFixed(2)} / Sconto minorenne €${sconto.toFixed(2)} `;
         } else if (eta === "over65") {
             sconto = prezzo * 0.40;
             prezzo -= sconto;
             console.log("sconto maggiore", sconto);
-            document.getElementById("prezzo_scontato").innerHTML = `Prezzo scontato €${prezzo.toFixed(2)} / Sconto over 65 €${sconto.toFixed(2)} `;
+            document.getElementById("price").innerHTML = `Prezzo scontato €${prezzo.toFixed(2)} / Sconto over 65 €${sconto.toFixed(2)} `;
+        } else {
+            document.getElementById("price").innerHTML = `Prezzo base ${prezzo.toFixed(2)}`;
         }
+            
 
-        console.log("prezzo scontato", prezzo);
+        console.log("prezzo", prezzo);
         inputFieldName.value = "";
         inputFieldKm.value = "";
 
