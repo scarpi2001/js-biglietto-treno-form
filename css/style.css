@@ -7,11 +7,11 @@
 
 body {
     background-color: crimson;
-    text-align: center;
 }
 
 body h1, h2 {
     color: #fff;
+    text-align: center;
 }
 
 /* HEADER */
@@ -23,20 +23,69 @@ header {
 
 /* container */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-bottom: 30px;
 }
 
-.container_block {
+/* sezione info */
+.section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.form {  
+    border-radius: 15px;
+}
+
+#flex_form {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
-    margin-bottom: 20px;
-    background-color: #fff;
-    padding: 20px 0;
+    width: 100%;
+    text-align: center;
 }
 
-.form {
-    border-radius: 15px;
+#buttons input {
+    padding: 20px;
+}
+
+/* sezione ticket */
+.ticket {
+    display: none;
+}
+
+.ticket_block {
+    display: flex;
+}
+
+.block_name {
+    padding: 20px;
+    background-color: grey;
+}
+
+.block_info {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#info_table {
+    width: 100%;
+}
+
+#info_table th {
+    text-align: left;
+}
+
+.active {
+    display: block;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.deactive {
+    display: none;
 }

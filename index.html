@@ -18,42 +18,69 @@
     <main>
         <!-- container -->
         <div class="container">
-            <div class="container_block form">
-                <div>
-                    <h4>Nome e Cognome</h4>
-                    <input id="name" type="text" placeholder="inserisci Nome e Cognome">
-                </div>
-                <div>
-                    <h4>Km da percorrere</h4>
-                    <input id="km" type="text" placeholder="inserisci i km da percorrere">
-                </div>
-                <div>
-                    <h4>Fascia d'età</h4>
-                    <select name="age" id="age">
-                        <option value="minorenne">minorenne</option>
-                        <option value="maggiorenne">maggiorenne</option>
-                        <option value="over65">over 65</option>
-                    </select>
-                </div>   
-                <button id="create">Genera</button> 
-            </div>
-            
-        </div>
+            <!-- sezione info -->
+            <div class="section form">
+                <form id="flex_form" action="#">
+                    <div>
+                        <h4>Nome e Cognome</h4>
+                        <input id="name" type="text" placeholder="inserisci Nome e Cognome">
+                    </div>
+                    <div>
+                        <h4>Km da percorrere</h4>
+                        <input id="km" type="text" placeholder="inserisci i km da percorrere">
+                    </div>
+                    <div>
+                        <h4>Fascia d'età</h4>
+                        <select name="age" id="age">
+                            <option value="minorenne">minorenne</option>
+                            <option value="maggiorenne">maggiorenne</option>
+                            <option value="over65">over 65</option>
+                        </select>
+                    </div>
 
-        
-        <!-- container -->
-        <div class="container">
-            <h2>IL TUO BIGLIETTO</h2>
-            <div class="container_block">
-                <h3 id="price"></h3>
+                    <div id="buttons">   
+                        <input type="button" id="create" value="Genera"> 
+                        <input type="button" id="cancel" value="Annulla">
+                    </div>  
+                </form>
+                
             </div>
-            
+
+            <!-- sezione biglietto -->
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="section ticket">
+                <h3>DETTAGLIO PASSEGGERI</h3>
+                <div class="ticket_block">
+                    <div class="block_name">
+                        <h3>NOME PASSEGGERO</h3>
+                        <h4 id="passenger_name"></h4>
+                    </div>
+
+                    <div class="block_info">
+                        <table id="info_table">
+                            <thead>
+                                <tr>
+                                    <th>Offerta</th>
+                                    <th>Carrozza</th>
+                                    <th>Codioce CP</th>
+                                    <th>Costo biglietto</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="discount"></td>
+                                    <td id="carrozza"></td>
+                                    <td id="cp"></td>
+                                    <td id="price"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
-
-
-
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
